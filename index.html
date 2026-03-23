@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LifeForge — Privacy Policy & Terms of Use</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #FAFAFA; color: #1a1a2e; line-height: 1.7; font-size: 15px;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    .logo { text-align: center; margin-bottom: 32px; }
+    .logo h1 { font-size: 28px; font-weight: 800; color: #ec6f21; letter-spacing: -0.5px; }
+    .logo p { font-size: 13px; color: #888; margin-top: 4px; }
+    .nav { display: flex; gap: 12px; justify-content: center; margin-bottom: 40px; flex-wrap: wrap; }
+    .nav a {
+      padding: 10px 20px; border-radius: 12px; font-size: 14px; font-weight: 700;
+      text-decoration: none; color: #ec6f21; background: rgba(236,111,33,0.08);
+      border: 1px solid rgba(236,111,33,0.15); transition: all 0.2s;
+    }
+    .nav a:hover { background: rgba(236,111,33,0.15); }
+    .section { margin-bottom: 48px; }
+    h2 { font-size: 24px; font-weight: 800; color: #1a1a2e; margin: 0 0 6px; padding-top: 24px; }
+    h2 .badge { font-size: 11px; font-weight: 700; color: #fff; background: #ec6f21; padding: 2px 8px; border-radius: 6px; vertical-align: middle; margin-left: 8px; }
+    h3 { font-size: 17px; font-weight: 700; color: #333; margin: 20px 0 8px; }
+    h4 { font-size: 15px; font-weight: 700; color: #555; margin: 16px 0 6px; }
+    p { margin: 8px 0; color: #444; }
+    ul { margin: 8px 0 8px 20px; color: #444; }
+    li { margin: 4px 0; }
+    .updated { font-size: 12px; color: #999; font-weight: 600; margin-bottom: 20px; }
+    .divider { border: none; border-top: 2px solid rgba(236,111,33,0.12); margin: 48px 0; }
+    .contact { background: rgba(236,111,33,0.06); border: 1px solid rgba(236,111,33,0.1); border-radius: 14px; padding: 16px 20px; margin-top: 16px; }
+    .contact a { color: #ec6f21; font-weight: 700; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    a { color: #ec6f21; }
+    @media (max-width: 480px) {
+      .container { padding: 24px 16px 60px; }
+      h2 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="logo">
+    <h1>LifeForge</h1>
+    <p>Privacy Policy & Terms of Use</p>
+  </div>
+
+  <div class="nav">
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Use</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════ -->
+  <!--                          PRIVACY POLICY                               -->
+  <!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+  <div class="section" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="updated">Last Updated: March 23, 2026</p>
+
+    <h3>1. Introduction</h3>
+    <p>LifeForge ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we handle your data when you use the LifeForge mobile application ("the App"). The App helps users build positive habits through gamification, tracking activities as RPG-style stats and quests.</p>
+
+    <h3>2. Age Requirement</h3>
+    <p>LifeForge is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If you are under 13, please do not use the App. If we learn that we have collected data from a child under 13, we will delete it promptly.</p>
+
+    <h3>3. Data Collection & Storage</h3>
+
+    <h4>Local Data</h4>
+    <p>All core game data (stats, quests, streaks, achievements, settings, activity logs) is stored locally on your device by default. Free users' data remains entirely on-device.</p>
+
+    <h4>Cloud Data</h4>
+    <p>When you use the App, an anonymous account is automatically created via Supabase (our cloud provider). This stores:</p>
+    <ul>
+      <li>Game progress (level, XP, stats, streaks, coins)</li>
+      <li>Display name, username, avatar selection, and friend code (if set)</li>
+      <li>Subscription status</li>
+      <li>Achievement IDs (for display on social profiles)</li>
+    </ul>
+    <p>Premium subscribers additionally receive cloud backup, which stores your full game save to prevent data loss across devices.</p>
+
+    <h4>Social & Guild Data</h4>
+    <p>If you use social features, the following data is stored on our servers:</p>
+    <ul>
+      <li>Follow/follower relationships</li>
+      <li>Guild membership, guild chat messages, and guild activity</li>
+      <li>VS challenge data (challenge type, progress, completion status)</li>
+      <li>Weekly XP totals (for leaderboards)</li>
+      <li>Accountability partner connections</li>
+    </ul>
+    <p>Guild chat messages are subject to a profanity filter. Messages containing inappropriate language are rejected and not stored.</p>
+
+    <h4>Push Notification Data</h4>
+    <p>If you enable push notifications, your device's push token (Expo Push Token) is stored on our servers to deliver notifications. Push tokens are associated with your anonymous user ID and are deleted when you disable notifications or delete your account. Notification content may be personalised using AI (see Section 5).</p>
+
+    <h4>Language Preference</h4>
+    <p>Your chosen language preference is stored locally on your device and in your game save. It is not transmitted separately to our servers.</p>
+
+    <h3>4. Third-Party Services</h3>
+    <p>We use the following third-party services to operate the App:</p>
+    <ul>
+      <li><strong>Supabase</strong> (supabase.com) — Cloud database, user authentication, edge functions, and scheduled tasks. Data is stored on servers in the EU (Ireland). <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a></li>
+      <li><strong>RevenueCat</strong> (revenuecat.com) — Manages subscriptions and in-app purchases securely. We do not have direct access to your payment details (credit card numbers, billing addresses). <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></li>
+      <li><strong>Anthropic Claude API</strong> (anthropic.com) — Powers the AI Activity Logger and AI-personalised push notifications. Only activity text and anonymised game context (stat levels, streak count) are sent — no personal identifiers, profile information, or device data. <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic Privacy Policy</a></li>
+      <li><strong>Expo Push Notifications</strong> (expo.dev) — Delivers push notifications to your device. <a href="https://expo.dev/privacy" target="_blank" rel="noopener">Expo Privacy Policy</a></li>
+      <li><strong>Apple App Store / Google Play Store</strong> — Processes all payments for subscriptions and in-app purchases according to their respective terms.</li>
+    </ul>
+
+    <h3>5. AI Features</h3>
+
+    <h4>AI Activity Logger</h4>
+    <p>LifeForge uses a Natural Language Processing feature powered by the Claude API to translate your typed activities into game stats and XP. Activity text snippets are sent to the API without personal identifiers, profile information, or local device data attached. The AI does not store your inputs or learn from them between sessions.</p>
+
+    <h4>AI-Personalised Notifications</h4>
+    <p>If you enable push notifications, the App may use AI to generate personalised motivational messages based on your anonymised game context (e.g., current streak, stat levels, recent achievements). No personal information (name, email, location) is included in the AI prompt. Generated messages are sent once and not stored.</p>
+
+    <h3>6. Data Sharing</h3>
+    <p>We do not sell, rent, or share your personal data with any third parties for marketing or advertising purposes. Data is shared only with the essential service providers listed above, solely for core App functionality.</p>
+    <p>Social features allow other users to see your display name, avatar, class, level, achievement badges, and weekly XP. This information is visible only to users you follow or who follow you, and to fellow guild members.</p>
+
+    <h3>7. Data Retention</h3>
+    <ul>
+      <li><strong>Local data</strong> is retained on your device until you uninstall the App or use the "Reset Character" option in Settings.</li>
+      <li><strong>Cloud data</strong> (profile, stats, social connections, guild data) is retained for as long as your account is active. Upon account deletion, cloud data is permanently removed within 30 days.</li>
+      <li><strong>Guild chat messages</strong> are retained for the lifetime of the guild. If you leave a guild, your messages remain visible to guild members.</li>
+      <li><strong>AI processing data</strong> (activity text and notification prompts sent to Claude API) is not stored by us or Anthropic after processing.</li>
+      <li><strong>Push tokens</strong> are deleted when you disable notifications or delete your account.</li>
+    </ul>
+
+    <h3>8. Your Rights & Data Deletion</h3>
+    <p>You can delete all local and cloud data at any time through Settings > "Reset Character" in the App. If you no longer have the App installed, you can request permanent account and data deletion by emailing <strong>jfgomes1991@gmail.com</strong> with the subject line "Data Deletion Request." Requests are processed within 30 days.</p>
+    <p>Under applicable data protection laws (including GDPR and CCPA), you may also have the right to access, correct, or port your personal data. Contact us at the email above to exercise these rights.</p>
+
+    <h3>9. Changes to This Policy</h3>
+    <p>We may update this Privacy Policy from time to time. The "Last Updated" date at the top reflects the most recent revision. Continued use of the App after changes constitutes acceptance.</p>
+
+    <h3>10. Contact</h3>
+    <div class="contact">
+      <p>For privacy questions or data deletion requests, contact us at:<br /><a href="mailto:jfgomes1991@gmail.com">jfgomes1991@gmail.com</a></p>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════════ -->
+  <!--                           TERMS OF USE                                -->
+  <!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+  <div class="section" id="terms">
+    <h2>Terms of Use <span class="badge">EULA</span></h2>
+    <p class="updated">Last Updated: March 23, 2026</p>
+
+    <p>By downloading, installing, or using LifeForge ("the App"), you agree to these Terms of Use. If you do not agree, do not use the App.</p>
+
+    <h3>1. Description of Service</h3>
+    <p>LifeForge is a habit-tracking mobile application that gamifies personal development through RPG mechanics including stats, quests, streaks, levels, classes, achievements, social features (friends, followers, VS challenges, accountability partners), and guilds (guild quests, guild wars, guild chat, alliances). The App is available as a free version with optional premium subscription and in-app purchases.</p>
+
+    <h3>2. Subscriptions</h3>
+
+    <h4>Auto-Renewable Subscription</h4>
+    <p>LifeForge offers an auto-renewable Premium subscription (<strong>"LifeForge Premium"</strong>) that provides additional features including:</p>
+    <ul>
+      <li>Unlimited daily XP (free users have a daily cap)</li>
+      <li>All daily quests unlocked</li>
+      <li>Sub-stat analytics and detailed breakdowns</li>
+      <li>Cloud backup for cross-device save sync</li>
+      <li>Bonus coin rewards from quests and achievements</li>
+      <li>Epic quest bonuses</li>
+    </ul>
+
+    <h4>Subscription Details</h4>
+    <ul>
+      <li><strong>Title:</strong> LifeForge Premium</li>
+      <li><strong>Duration:</strong> Monthly (auto-renewing)</li>
+      <li><strong>Price:</strong> Displayed at point of purchase in your local currency</li>
+    </ul>
+
+    <h4>Payment</h4>
+    <ul>
+      <li>Payment is charged to your Apple ID account (iOS) or Google Play account (Android) at confirmation of purchase.</li>
+      <li>A free trial period may be offered. If you do not cancel before the free trial ends, you will be automatically charged the subscription price.</li>
+    </ul>
+
+    <h4>Renewal</h4>
+    <ul>
+      <li>Your subscription automatically renews unless you turn off auto-renewal at least 24 hours before the end of the current billing period.</li>
+      <li>Your account will be charged for renewal within 24 hours prior to the end of the current period at the subscription price displayed at the time of purchase.</li>
+    </ul>
+
+    <h4>Managing & Cancelling</h4>
+    <p>You can manage or cancel your subscription at any time through your device's subscription settings:</p>
+    <ul>
+      <li><strong>iOS:</strong> Settings > Apple ID > Subscriptions</li>
+      <li><strong>Android:</strong> Google Play Store > Menu > Subscriptions</li>
+    </ul>
+    <p>Cancellation takes effect at the end of the current billing period. You retain access to premium features until the subscription expires. No refunds are provided for the unused portion of any subscription period.</p>
+
+    <h3>3. In-App Purchases</h3>
+    <p>LifeForge offers coin bundles as one-time in-app purchases. Coins are virtual currency used within the App for cosmetic items (avatars, paths), gameplay features (streak freezes, quest swaps), and guild features (donations, boosters). Coins have no real-world monetary value and are non-transferable. All in-app purchases are final and non-refundable, except as required by applicable law or the respective app store's refund policy.</p>
+
+    <h3>4. User-Generated Content & Conduct</h3>
+    <p>Guild chat messages and display names are considered user-generated content. You are solely responsible for the content you post. We reserve the right to remove content that violates these terms.</p>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Post offensive, abusive, or inappropriate content in guild chat or display names</li>
+      <li>Attempt to manipulate, hack, or exploit the App, its servers, or game data</li>
+      <li>Use the App for any unlawful purpose</li>
+      <li>Interfere with other users' use of the App</li>
+      <li>Reverse-engineer, decompile, or disassemble the App</li>
+      <li>Exploit bugs, race conditions, or unintended mechanics for unfair advantage</li>
+      <li>Create multiple accounts to circumvent rate limits or restrictions</li>
+    </ul>
+
+    <h3>5. Social Features & Guilds</h3>
+    <p>LifeForge includes social features that allow interaction with other users. By using these features, you acknowledge that:</p>
+    <ul>
+      <li>Your display name, avatar, class, level, and achievement badges are visible to other users</li>
+      <li>Weekly XP totals are visible on leaderboards to users in your social circle</li>
+      <li>Guild chat messages are visible to all members of your guild</li>
+      <li>Guild quests, war results, and donation amounts are visible to guild members</li>
+      <li>You may be matched against other guilds in guild wars based on guild level</li>
+    </ul>
+
+    <h3>6. Intellectual Property</h3>
+    <p>All content, design, graphics, icons, avatars, animations, code, and game mechanics in LifeForge are the intellectual property of LifeForge and its creator. You may not copy, modify, distribute, or create derivative works from any part of the App without written permission.</p>
+
+    <h3>7. Disclaimer of Warranties</h3>
+    <p>The App is provided "as is" and "as available" without warranties of any kind, express or implied. We do not guarantee that the App will be uninterrupted, error-free, or free of harmful components. AI-generated content (activity logging results, notifications) may contain inaccuracies.</p>
+
+    <h3>8. Limitation of Liability</h3>
+    <p>To the maximum extent permitted by law, LifeForge and its creator shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App, including but not limited to loss of data, loss of virtual currency or progress, or inability to access the service.</p>
+
+    <h3>9. Termination</h3>
+    <p>We reserve the right to suspend or terminate your access to the App at any time for violation of these Terms, without prior notice. Upon termination, your right to use the App ceases immediately. Data deletion follows the process described in our Privacy Policy.</p>
+
+    <h3>10. Changes to These Terms</h3>
+    <p>We reserve the right to modify these Terms of Use at any time. Changes take effect upon posting. Continued use of the App after changes constitutes acceptance of the revised terms.</p>
+
+    <h3>11. Governing Law</h3>
+    <p>These Terms shall be governed by the laws of the United Kingdom, without regard to conflict of law provisions.</p>
+
+    <h3>12. Contact</h3>
+    <div class="contact">
+      <p>For questions about these Terms, contact us at:<br /><a href="mailto:jfgomes1991@gmail.com">jfgomes1991@gmail.com</a></p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
