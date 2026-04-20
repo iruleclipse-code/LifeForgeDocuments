@@ -87,7 +87,7 @@
 
   <div class="section" id="privacy">
     <h2>Privacy Policy</h2>
-    <p class="updated">Last Updated: March 23, 2026</p>
+    <p class="updated">Last Updated: April 20, 2026</p>
 
     <h3>1. Introduction</h3>
     <p>LifeForge ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we handle your data when you use the LifeForge mobile application ("the App"). The App helps users build positive habits through gamification, tracking activities as RPG-style stats and quests.</p>
@@ -145,11 +145,58 @@
     <h4>AI-Personalised Notifications</h4>
     <p>If you enable push notifications, the App may use AI to generate personalised motivational messages based on your anonymised game context (e.g., current streak, stat levels, recent achievements). No personal information (name, email, location) is included in the AI prompt. Generated messages are sent once and not stored.</p>
 
-    <h3>6. Data Sharing</h3>
+    <h3>6. Health &amp; Fitness Integration</h3>
+    <p>LifeForge can connect to <strong>Apple Health</strong> (iOS) and <strong>Google Health Connect</strong> (Android) to turn your real-world activity into in-game XP. Because health data is some of the most sensitive data on your phone, we've designed this feature around a simple rule: <strong>your health data never leaves your device.</strong></p>
+
+    <h4>What data we read</h4>
+    <p>When you choose to connect health sync, LifeForge requests <strong>read-only</strong> access to the following data types:</p>
+    <ul>
+      <li><strong>Steps</strong> — daily step count</li>
+      <li><strong>Workouts</strong> — including running, cycling, strength training, yoga, meditation, and swimming</li>
+      <li><strong>Sleep</strong> — duration, efficiency, and sleep stages</li>
+      <li><strong>Heart rate</strong> — used to estimate workout intensity</li>
+      <li><strong>Bedtime patterns</strong> — to reward consistent sleep schedules</li>
+    </ul>
+    <p>We do <strong>not</strong> write anything back to Apple Health or Health Connect. LifeForge only reads.</p>
+
+    <h4>Where your data is processed</h4>
+    <p><strong>All health data is processed entirely on your device.</strong> Raw health records — every step count, heart rate reading, workout session, and sleep entry — stay inside your phone's secure health store. Our app reads them, converts them into XP using a fixed formula, and then discards the raw values. They are never written to our servers, never sent to Supabase (our backend provider), and never shared with any third party.</p>
+
+    <h4>What leaves your device</h4>
+    <p>The only information that syncs to your LifeForge account is <strong>aggregated XP totals</strong> — integer numbers like "+30 VIT" or "+15 WIL". These numbers cannot be reverse-engineered into specific health records; a total of "+30 VIT" could come from any combination of steps, workouts, or sleep. XP totals are transmitted to your profile over HTTPS (TLS-encrypted) and stored alongside your other game progress.</p>
+
+    <h4>How to revoke access</h4>
+    <p>You can disconnect health sync at any time:</p>
+    <ul>
+      <li><strong>Inside the app:</strong> Settings &rarr; Health Sync &rarr; Disconnect. This immediately stops all data access.</li>
+      <li><strong>iOS:</strong> Settings &rarr; Privacy &amp; Security &rarr; Health &rarr; LifeForge &rarr; turn off individual data types.</li>
+      <li><strong>Android:</strong> Settings &rarr; Apps &rarr; Health Connect &rarr; App permissions &rarr; LifeForge.</li>
+    </ul>
+    <p>Disconnecting does not delete the XP you've already earned — it simply stops future reads.</p>
+
+    <h4>What we will never do with health data</h4>
+    <ul>
+      <li>We will <strong>never</strong> sell or rent it.</li>
+      <li>We will <strong>never</strong> share it with advertisers, analytics providers, or any third party.</li>
+      <li>We will <strong>never</strong> use it to target ads. (LifeForge does not run ads inside the app.)</li>
+      <li>We will <strong>never</strong> use it for any purpose other than calculating in-app XP.</li>
+    </ul>
+    <p>This is also a requirement of Apple's HealthKit terms, which we fully comply with.</p>
+
+    <h4>Third parties</h4>
+    <p><strong>None.</strong> No third-party SDK, analytics tool, or cloud service receives your health data. Processing happens locally on your device using Apple's HealthKit framework and Google's Health Connect SDK.</p>
+
+    <h4>Legal basis for processing</h4>
+    <p>We process health data on the basis of your <strong>explicit consent</strong>, which you give when you enable Health Sync and grant individual data-type permissions through your operating system. You can withdraw consent at any time using the steps above.</p>
+
+    <h4>Children</h4>
+    <p>LifeForge's health integration is not intended for users under the age of 16. We do not knowingly read health data from minors.</p>
+
+    <h3>7. Data Sharing</h3>
     <p>We do not sell, rent, or share your personal data with any third parties for marketing or advertising purposes. Data is shared only with the essential service providers listed above, solely for core App functionality.</p>
     <p>Social features allow other users to see your display name, avatar, class, level, achievement badges, and weekly XP. This information is visible only to users you follow or who follow you, and to fellow guild members.</p>
 
-    <h3>7. Data Retention</h3>
+    <h3>8. Data Retention</h3>
     <ul>
       <li><strong>Local data</strong> is retained on your device until you uninstall the App or use the "Reset Character" option in Settings.</li>
       <li><strong>Cloud data</strong> (profile, stats, social connections, guild data) is retained for as long as your account is active. Upon account deletion, cloud data is permanently removed within 30 days.</li>
@@ -158,14 +205,14 @@
       <li><strong>Push tokens</strong> are deleted when you disable notifications or delete your account.</li>
     </ul>
 
-    <h3>8. Your Rights & Data Deletion</h3>
+    <h3>9. Your Rights & Data Deletion</h3>
     <p>You can delete all local and cloud data at any time through Settings > "Reset Character" in the App. If you no longer have the App installed, you can request permanent account and data deletion by emailing <strong>support@lifeforge.app</strong> with the subject line "Data Deletion Request." Requests are processed within 30 days.</p>
     <p>Under applicable data protection laws (including GDPR and CCPA), you may also have the right to access, correct, or port your personal data. Contact us at the email above to exercise these rights.</p>
 
-    <h3>9. Changes to This Policy</h3>
+    <h3>10. Changes to This Policy</h3>
     <p>We may update this Privacy Policy from time to time. The "Last Updated" date at the top reflects the most recent revision. Continued use of the App after changes constitutes acceptance.</p>
 
-    <h3>10. Contact</h3>
+    <h3>11. Contact</h3>
     <div class="contact">
       <p>For privacy questions or data deletion requests, contact us at:<br /><a href="mailto:support@lifeforge.app">support@lifeforge.app</a></p>
     </div>
@@ -179,7 +226,7 @@
 
   <div class="section" id="terms">
     <h2>Terms of Use <span class="badge">EULA</span></h2>
-    <p class="updated">Last Updated: March 23, 2026</p>
+    <p class="updated">Last Updated: April 20, 2026</p>
 
     <p>By downloading, installing, or using LifeForge ("the App"), you agree to these Terms of Use. If you do not agree, do not use the App.</p>
 
@@ -252,25 +299,48 @@
       <li>You may be matched against other guilds in guild wars based on guild level</li>
     </ul>
 
-    <h3>6. Intellectual Property</h3>
+    <h3>6. Health Integration</h3>
+
+    <h4>What the Integration Does</h4>
+    <p>If you connect LifeForge to Apple Health (iOS) or Google Health Connect (Android), LifeForge reads your health and fitness data — including steps, workouts, sleep, and heart rate (used to detect workout intensity) — to automatically award XP within the App. Connecting your health data is entirely optional. You can disconnect at any time in Settings.</p>
+
+    <h4>Read-Only Access</h4>
+    <p>LifeForge only <strong>reads</strong> health data. It does not write, modify, or delete any of your health records, and it does not share your raw health data with third parties.</p>
+
+    <h4>Accuracy &amp; Limitations</h4>
+    <p>Health data is provided by your operating system (Apple Health or Google Health Connect) based on readings from your device or connected wearables. LifeForge does not independently verify the accuracy of this data. XP awarded from health data is approximate and intended for gamification purposes only.</p>
+
+    <h4>Not a Medical App</h4>
+    <p>LifeForge is not a medical device, fitness coach, or clinical tool, and does not provide medical advice, diagnosis, or treatment. Health-integration features are designed for motivation and gamification only. Always consult a qualified healthcare professional before making decisions about diet, exercise, sleep, or any medical condition.</p>
+
+    <h4>Anti-Abuse</h4>
+    <p>To keep the game fair for all players, LifeForge may adjust or remove XP awarded from health data if it detects patterns suggesting manipulation of that data (for example, bulk-inserted fake step counts or implausibly large activity spikes).</p>
+
+    <h4>Your Responsibility</h4>
+    <p>You are responsible for granting and managing health permissions in your device settings. You can revoke LifeForge's access to your health data at any time through the Apple Health app (iOS) or Health Connect settings (Android). Revoking access will stop further automatic XP, but XP already awarded will remain on your account.</p>
+
+    <h4>Data Handling</h4>
+    <p>How LifeForge processes your health data is described in our Privacy Policy above.</p>
+
+    <h3>7. Intellectual Property</h3>
     <p>All content, design, graphics, icons, avatars, animations, code, and game mechanics in LifeForge are the intellectual property of LifeForge and its creator. You may not copy, modify, distribute, or create derivative works from any part of the App without written permission.</p>
 
-    <h3>7. Disclaimer of Warranties</h3>
+    <h3>8. Disclaimer of Warranties</h3>
     <p>The App is provided "as is" and "as available" without warranties of any kind, express or implied. We do not guarantee that the App will be uninterrupted, error-free, or free of harmful components. AI-generated content (activity logging results, notifications) may contain inaccuracies.</p>
 
-    <h3>8. Limitation of Liability</h3>
+    <h3>9. Limitation of Liability</h3>
     <p>To the maximum extent permitted by law, LifeForge and its creator shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App, including but not limited to loss of data, loss of virtual currency or progress, or inability to access the service.</p>
 
-    <h3>9. Termination</h3>
+    <h3>10. Termination</h3>
     <p>We reserve the right to suspend or terminate your access to the App at any time for violation of these Terms, without prior notice. Upon termination, your right to use the App ceases immediately. Data deletion follows the process described in our Privacy Policy.</p>
 
-    <h3>10. Changes to These Terms</h3>
+    <h3>11. Changes to These Terms</h3>
     <p>We reserve the right to modify these Terms of Use at any time. Changes take effect upon posting. Continued use of the App after changes constitutes acceptance of the revised terms.</p>
 
-    <h3>11. Governing Law</h3>
+    <h3>12. Governing Law</h3>
     <p>These Terms shall be governed by the laws of the United Kingdom, without regard to conflict of law provisions.</p>
 
-    <h3>12. Contact</h3>
+    <h3>13. Contact</h3>
     <div class="contact">
       <p>For questions about these Terms, contact us at:<br /><a href="mailto:support@lifeforge.app">support@lifeforge.app</a></p>
     </div>
